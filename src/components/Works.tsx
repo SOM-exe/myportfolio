@@ -5,57 +5,57 @@ import { Project } from "../types";
 
 const projectsData: Project[] = [
   {
-    id: "delhi-breath",
-    title: "Delhi Breath Air Purifier",
+    id: "eco-breathe",
+    title: "Eco Breathe",
     category: "IoT & Environmental Systems",
-    tags: ["IoT", "Microcontrollers", "Fuzzy Logic", "React Core Analytics"],
+    tags: ["ESP32", "PMS Sensor", "Adafruit IO", "React.js", "Node.js", "MongoDB", "Chart.js"],
     image: "/images/delhi-breath.jpg",
     achievement: "Smart India Hackathon 2025 Runner Up",
-    description: "An automated air purification appliance engineered to combat hazardous AQI levels. Monitors PM2.5, PM10, and CO2 in real-time, dynamically adjusting custom dual-stage filtration cycles using local feedback control code.",
+    description: "Low-cost IoT air quality monitoring network utilizing ESP32 microcontrollers. Measures PM2.5, temperature, and humidity in real-time with PMS sensors, streaming data to Adafruit IO with a React.js & Chart.js live dashboard.",
     span: "md:col-span-7",
-    link: "#",
-    github: "https://github.com/shobhits377"
+    link: "https://github.com/SOM-exe/EcoBreathe",
+    github: "https://github.com/SOM-exe/EcoBreathe"
   },
   {
-    id: "projectile-tracking",
-    title: "Projectile Tracking Device",
-    category: "Hardware & Kinematic Math Systems",
-    tags: ["C++", "IMU Sensors", "Signal Filtering", "Matplotlib Interface"],
-    image: "/images/projectile.jpg",
-    description: "A real-time physical projection monitoring system. Calculates spatial velocity, launch trajectory, and absolute coordinates utilizing Kalman filtering and high-speed telemetry streams.",
-    span: "md:col-span-5",
-    link: "#",
-    github: "https://github.com/shobhits377"
-  },
-  {
-    id: "cognifyz-dashboard",
-    title: "Cognifyz Dashboard",
-    category: "Fullstack Solutions & Analytics Panels",
-    tags: ["React 19", "D3.js Data Engine", "Node.js API", "Tailwind Custom Theme"],
+    id: "ai-resume-analyzer",
+    title: "AI Resume Analyzer",
+    category: "Fullstack Web & NLP Systems",
+    tags: ["React.js", "Node.js", "Express.js", "NLP", "ATS Scoring"],
     image: "/images/cognifyz.jpg",
-    description: "An interactive enterprise analytics platform rendering deep intelligence metrics. Optimizes live transactional streams feed, user profiling, and spatial metrics within a high-density bento control hub.",
+    description: "Web application that parses uploaded resumes and evaluates ATS compatibility against job descriptions using Natural Language Processing (NLP) keyword and skill matching with section-wise feedback.",
     span: "md:col-span-5",
-    link: "#",
-    github: "https://github.com/shobhits377"
+    link: "https://github.com/SOM-exe/AI-Resume-Analyzer",
+    github: "https://github.com/SOM-exe/AI-Resume-Analyzer"
+  },
+  {
+    id: "myportfolio",
+    title: "MyPortfolio Website",
+    category: "Modern Web & Animation Architecture",
+    tags: ["React 19", "TypeScript", "Vite 6", "Tailwind CSS 4", "Framer Motion", "GSAP"],
+    image: "/images/sih-badge.jpg",
+    description: "Interactive portfolio featuring dark-mode glassmorphism, hardware-accelerated HLS video streaming, Framer Motion + GSAP physics animations, real-time LeetCode & GitHub heatmaps, and Google GenAI SDK.",
+    span: "md:col-span-7",
+    link: "https://som-exe.github.io/myportfolio/",
+    github: "https://github.com/SOM-exe/MyPortfolio"
   },
   {
     id: "jpmorgan-simulation",
     title: "JPMorgan Chase Simulation",
-    category: "Distributed Finance & Low Latency Trade Routing",
-    tags: ["Java Parallel Core", "Python Math", "React UI Wireframe", "Trade Sockets"],
+    category: "Software Engineering Simulation",
+    tags: ["Java Parallel Core", "Python", "Trade Sockets", "Financial Engineering"],
     image: "/images/jpmorgan.jpg",
-    description: "A simulated high-frequency order placement pipeline mapping live market flows. Employs advanced transactional queue synchronization mechanisms to log currency and security arbitrage vectors.",
-    span: "md:col-span-7",
-    link: "#",
-    github: "https://github.com/shobhits377"
+    description: "Simulated high-frequency order placement pipeline mapping live market flows. Employs advanced transactional queue synchronization mechanisms to log currency and security arbitrage vectors.",
+    span: "md:col-span-5",
+    link: "https://github.com/SOM-exe",
+    github: "https://github.com/SOM-exe"
   }
 ];
 
 // Reliable fallback imagery for different project themes so the system never fails to render
 const fallbackImages: Record<string, string> = {
-  "delhi-breath": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
-  "projectile-tracking": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
-  "cognifyz-dashboard": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+  "eco-breathe": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
+  "ai-resume-analyzer": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+  "myportfolio": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop",
   "jpmorgan-simulation": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop"
 };
 
