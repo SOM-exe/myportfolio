@@ -34,20 +34,9 @@ const projectsData: Project[] = [
     tags: ["React 19", "TypeScript", "Vite 6", "Tailwind CSS 4", "Framer Motion", "GSAP"],
     image: "/images/sih-badge.jpg",
     description: "Interactive portfolio featuring dark-mode glassmorphism, hardware-accelerated HLS video streaming, Framer Motion + GSAP physics animations, real-time LeetCode & GitHub heatmaps, and Google GenAI SDK.",
-    span: "md:col-span-7",
+    span: "md:col-span-12",
     link: "https://som-exe.github.io/myportfolio/",
     github: "https://github.com/SOM-exe/MyPortfolio"
-  },
-  {
-    id: "jpmorgan-simulation",
-    title: "JPMorgan Chase Simulation",
-    category: "Software Engineering Simulation",
-    tags: ["Java Parallel Core", "Python", "Trade Sockets", "Financial Engineering"],
-    image: "/images/jpmorgan.jpg",
-    description: "Simulated high-frequency order placement pipeline mapping live market flows. Employs advanced transactional queue synchronization mechanisms to log currency and security arbitrage vectors.",
-    span: "md:col-span-5",
-    link: "https://github.com/SOM-exe",
-    github: "https://github.com/SOM-exe"
   }
 ];
 
@@ -55,8 +44,7 @@ const projectsData: Project[] = [
 const fallbackImages: Record<string, string> = {
   "eco-breathe": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop",
   "ai-resume-analyzer": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
-  "myportfolio": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop",
-  "jpmorgan-simulation": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=800&auto=format&fit=crop"
+  "myportfolio": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop"
 };
 
 export default function Works() {
@@ -81,11 +69,11 @@ export default function Works() {
               SELECTED WORKS
             </span>
             <h2 className="text-4xl md:text-5xl font-display italic leading-tight">
-              Engineering solutions across hardware limits and cloud codebases.
+              From Idea to Code
             </h2>
           </div>
-          <div className="text-muted text-xs md:text-sm font-light font-mono text-left max-w-xs leading-relaxed border-l border-stroke pl-4">
-            Curated system solutions covering embedded hardware models, reactive applications, and transactional engines.
+          <div className="text-muted text-xs md:text-sm font-light font-mono text-left max-w-md leading-relaxed border-l border-stroke pl-4">
+            Exploring ideas through code — from responsive web applications to full-stack projects, each build combines thoughtful design, modern technologies, and practical problem-solving.
           </div>
         </motion.div>
 
