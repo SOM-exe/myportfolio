@@ -34,7 +34,7 @@ const projectsData: Project[] = [
     tags: ["React 19", "TypeScript", "Vite 6", "Tailwind CSS 4", "Framer Motion", "GSAP"],
     image: "/images/sih-badge.jpg",
     description: "Interactive portfolio featuring dark-mode glassmorphism, hardware-accelerated HLS video streaming, Framer Motion + GSAP physics animations, real-time LeetCode & GitHub heatmaps, and Google GenAI SDK.",
-    span: "md:col-span-12",
+    span: "md:col-span-7",
     link: "https://som-exe.github.io/myportfolio/",
     github: "https://github.com/SOM-exe/MyPortfolio"
   }
