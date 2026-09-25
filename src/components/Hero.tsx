@@ -177,7 +177,7 @@ export default function Hero({ isLoaded }: HeroProps) {
             See Works
           </button>
           <a
-            href="/SOMS_Resume.pdf"
+            href={`${import.meta.env.BASE_URL}SOMS_Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full text-xs md:text-sm font-medium px-7 py-3.5 border border-white/20 text-text-primary hover:border-white/50 hover:bg-white/5 hover:scale-105 transition-all select-none"

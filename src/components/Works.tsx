@@ -3,13 +3,20 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, Github, Trophy } from "lucide-react";
 import { Project } from "../types";
 
+const getAssetUrl = (path: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${cleanBase}${cleanPath}`;
+};
+
 const projectsData: Project[] = [
   {
     id: "eco-breathe",
     title: "Eco Breathe",
     category: "IoT & Environmental Systems",
     tags: ["ESP32", "PMS Sensor", "Adafruit IO", "React.js", "Node.js", "MongoDB", "Chart.js"],
-    image: "/images/delhi-breath.jpg",
+    image: getAssetUrl("images/delhi-breath.jpg"),
     achievement: "Smart India Hackathon 2025 Runner Up",
     description: "Low-cost IoT air quality monitoring network utilizing ESP32 microcontrollers. Measures PM2.5, temperature, and humidity in real-time with PMS sensors, streaming data to Adafruit IO with a React.js & Chart.js live dashboard.",
     span: "md:col-span-7",
@@ -21,7 +28,7 @@ const projectsData: Project[] = [
     title: "AI Resume Analyzer",
     category: "Fullstack Web & NLP Systems",
     tags: ["React.js", "Node.js", "Express.js", "NLP", "ATS Scoring"],
-    image: "/images/cognifyz.jpg",
+    image: getAssetUrl("images/ai-resume-analyzer.jpg"),
     description: "Web application that parses uploaded resumes and evaluates ATS compatibility against job descriptions using Natural Language Processing (NLP) keyword and skill matching with section-wise feedback.",
     span: "md:col-span-5",
     link: "https://github.com/SOM-exe/AI-Resume-Analyzer",
@@ -32,7 +39,7 @@ const projectsData: Project[] = [
     title: "MyPortfolio Website",
     category: "Modern Web & Animation Architecture",
     tags: ["React 19", "TypeScript", "Vite 6", "Tailwind CSS 4", "Framer Motion", "GSAP"],
-    image: "/images/sih-badge.jpg",
+    image: getAssetUrl("images/sih-badge.jpg"),
     description: "Interactive portfolio featuring dark-mode glassmorphism, hardware-accelerated HLS video streaming, Framer Motion + GSAP physics animations, real-time LeetCode & GitHub heatmaps, and Google GenAI SDK.",
     span: "md:col-span-7",
     link: "https://som-exe.github.io/myportfolio/",

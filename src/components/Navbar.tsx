@@ -77,7 +77,7 @@ export default function Navbar() {
           </button>
 
           <a
-            href="/SOMS_Resume.pdf"
+            href={`${import.meta.env.BASE_URL}SOMS_Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="px-3.5 py-1.5 rounded-full text-xs md:text-sm text-text-primary hover:text-white/70 transition-colors"

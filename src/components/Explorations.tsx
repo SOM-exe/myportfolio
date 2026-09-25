@@ -11,24 +11,31 @@ interface ExplorationItem {
   image: string;
 }
 
+const getAssetUrl = (path: string) => {
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${cleanBase}${cleanPath}`;
+};
+
 const explorationsLeft: ExplorationItem[] = [
   {
     id: "exp-1",
     title: "Smart India Hackathon '25",
     category: "Event Participation",
-    image: "/images/sih-badge.jpg"
+    image: getAssetUrl("images/sih-badge.jpg")
   },
   {
     id: "exp-2",
     title: "Smart Air Purifier Build",
     category: "Prototype Design",
-    image: "/images/ecobreathe-prototype.jpg"
+    image: getAssetUrl("images/ecobreathe-prototype.jpg")
   },
   {
     id: "exp-3",
     title: "The Team Behind Delhi Breath",
     category: "Hackathon Crew",
-    image: "/images/team-hoodies.jpg"
+    image: getAssetUrl("images/team-hoodies.jpg")
   }
 ];
 
@@ -37,19 +44,19 @@ const explorationsRight: ExplorationItem[] = [
     id: "exp-4",
     title: "LNCT X MIT ADT",
     category: "SIH 2025 Finals",
-    image: "/images/sih-team.jpg"
+    image: getAssetUrl("images/sih-team.jpg")
   },
   {
     id: "exp-5",
     title: "Stage Felicitation",
     category: "SIH Hardware Edition",
-    image: "/images/sih-valedictory.jpg"
+    image: getAssetUrl("images/sih-valedictory.jpg")
   },
   {
     id: "exp-6",
     title: "Waiting for Results",
     category: "SIH 2025",
-    image: "/images/team-selfie.jpg"
+    image: getAssetUrl("images/team-selfie.jpg")
   }
 ];
 

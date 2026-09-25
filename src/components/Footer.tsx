@@ -192,7 +192,7 @@ export default function Footer() {
             </a>
             <span className="text-stroke/50">|</span>
             <a
-              href="https://github.com/shobhits377"
+              href="https://github.com/SOM-exe"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-muted hover:text-[#89AACC] transition-colors flex items-center gap-1"
