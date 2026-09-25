@@ -7,7 +7,6 @@ import CodingSkills from "./components/CodingSkills";
 import Works from "./components/Works";
 import Journal from "./components/Journal";
 import Explorations from "./components/Explorations";
-import Stats from "./components/Stats";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -28,7 +27,6 @@ export default function App() {
         <Works />
         <Journal />
         <Explorations />
-        <Stats />
         <Footer />
       </div>
 
